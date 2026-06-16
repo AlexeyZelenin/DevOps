@@ -86,7 +86,7 @@ jobs:
       run: whereis dotnet
       
     - name: update nugets
-      run: dotnet outdated -u --include-transitive
+      run: dotnet outdated -u --transitive
       env:
         PATH: "$PATH:/home/monfex/.dotnet/tools"
 
